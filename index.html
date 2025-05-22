@@ -5,675 +5,671 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>د. عثمان بن ناصر الزهراني - البطاقة الشخصية</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/api/placeholder/180/180">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="الملف الشخصي للدكتور عثمان بن ناصر الزهراني - خبير إدارة المعرفة ونظم المعلومات">
+    <meta name="keywords" content="إدارة المعرفة, نظم المعلومات, رؤية 2030, التحول الرقمي">
+    <meta name="author" content="Dr. Othman Bin Nasser Al-Zahrani">
 </head>
 <body>
-    <div id="app" class="min-h-screen bg-gradient-to-b from-gray-100 to-white">
-        <!-- Header -->
-        <header class="sticky top-0 bg-gradient-to-r from-indigo-700 to-indigo-900 shadow-md p-4 z-10 text-white">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <div class="w-16 h-16 rounded-full overflow-hidden bg-white flex items-center justify-center text-indigo-800 text-xl font-bold">
-                        ع.ز
-                    </div>
-                    <div class="mr-4">
-                        <h1 class="text-xl font-bold">دكتور عثمان بن ناصر الزهراني</h1>
-                        <p class="text-indigo-100">المؤسس والمدير التنفيذي - وان باينري نيكسس</p>
-                    </div>
+    <!-- Clean Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    ع.ز
                 </div>
-                
-                <div class="flex items-center">
-                    <button id="addContactBtn" class="bg-white text-indigo-700 px-4 py-2 rounded-lg ml-2 hover:bg-indigo-50 transition duration-300">
-                        إضافة جهة اتصال
-                    </button>
-                    
-                    <button id="toggleLangBtn" class="bg-indigo-600 px-3 py-1 rounded-lg hover:bg-indigo-500 transition duration-300 text-white">
-                        English
-                    </button>
+                <div class="profile-info">
+                    <h1>دكتور عثمان بن ناصر الزهراني</h1>
+                    <p>المؤسس والمدير التنفيذي - وان باينري نيكسس</p>
                 </div>
             </div>
-        </header>
-        
-        <!-- Navigation Tabs -->
-        <div class="bg-white shadow-sm sticky top-24 z-10">
-            <div class="flex overflow-x-auto scrollbar-hide">
-                <button class="tab-btn px-4 py-3 font-medium flex-1 text-center text-indigo-600 border-b-2 border-indigo-600" data-tab="profile">
-                    الملف الشخصي
+            
+            <div class="header-actions">
+                <button id="addContactBtn" class="btn btn-primary">
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                    إضافة جهة اتصال
                 </button>
-                <button class="tab-btn px-4 py-3 font-medium flex-1 text-center text-gray-500" data-tab="social">
-                    التواصل الاجتماعي
-                </button>
-                <button class="tab-btn px-4 py-3 font-medium flex-1 text-center text-gray-500" data-tab="followers">
-                    المتابعون
-                </button>
-                <button class="tab-btn px-4 py-3 font-medium flex-1 text-center text-gray-500" data-tab="youtube">
-                    يوتيوب
+                
+                <button id="toggleLangBtn" class="btn btn-secondary btn-sm">
+                    <svg class="w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                    </svg>
+                    English
                 </button>
             </div>
         </div>
-        
-        <!-- Main Content Area -->
-        <main class="p-4 pb-20">
-            <!-- Profile Tab (visible by default) -->
-            <div id="profile-tab" class="tab-content space-y-6">
-                <!-- Bio Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-2">نبذة عني</h2>
-                    <p class="text-gray-700">دكتور في إدارة المعرفة وخبير في نظم المعلومات وإدارة المحتوى المؤسسي. متخصص في الشريعة والدراسات الإسلامية. ملتزم بتطبيق التكنولوجيا الحديثة لدعم رؤية المملكة 2030.</p>
-                    
-                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    </header>
+    
+    <!-- Clean Navigation -->
+    <nav class="nav-tabs">
+        <div class="nav-tabs-container">
+            <button class="nav-tab active" data-tab="profile">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                الملف الشخصي
+            </button>
+            <button class="nav-tab" data-tab="social">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+                التواصل الاجتماعي
+            </button>
+            <button class="nav-tab" data-tab="followers">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                المتابعون
+            </button>
+            <button class="nav-tab" data-tab="youtube">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-8 4h8M5 8h14l-1 8H6L5 8z" />
+                </svg>
+                يوتيوب
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Profile Section -->
+        <section id="profile-section" class="content-section active space-y-8">
+            <!-- Bio -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-4">نبذة عني</h2>
+                <p class="text-secondary text-lg leading-relaxed mb-6">
+                    دكتور في إدارة المعرفة وخبير في نظم المعلومات وإدارة المحتوى المؤسسي. متخصص في الشريعة والدراسات الإسلامية. ملتزم بتطبيق التكنولوجيا الحديثة لدعم رؤية المملكة 2030.
+                </p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon bg-blue-50">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <span class="mr-2 text-gray-700">المملكة العربية السعودية</span>
                         </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                            <span class="mr-2 text-gray-700">سعودي</span>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <span class="text-secondary font-medium">المملكة العربية السعودية</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon bg-green-50">
+                            <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <span class="mr-2 text-gray-700">Founder@obn.sa</span>
                         </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <span class="text-secondary font-medium">Founder@obn.sa</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon bg-purple-50">
+                            <svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
-                            <span class="mr-2 text-gray-700">+966 555 587 150 / +20 111 180 0777</span>
                         </div>
-                        <div class="flex items-center">
-                            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <span class="text-secondary font-medium" dir="ltr">+966555587160</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon bg-orange-50">
+                            <svg class="w-5 h-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            <span class="mr-2 text-gray-700">1990-11-13</span>
                         </div>
+                        <span class="text-secondary font-medium">13 نوفمبر 1990</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon bg-blue-50">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <span class="text-secondary font-medium">سعودي</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon bg-red-50">
+                            <svg class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                        <span class="text-secondary font-medium">0000000000</span>
                     </div>
                 </div>
-
-                <!-- Education Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">المؤهلات الأكاديمية</h2>
-                    
-                    <div class="mt-0">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">دكتوراه في إدارة المعرفة</h3>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <p class="text-indigo-600">جامعة الملك عبد العزيز</p>
-                        <p class="text-emerald-600 mt-1">امتياز</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">ماجستير في الشريعة والدراسات الإسلامية</h3>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-                        <p class="text-indigo-600">جامعة أم القرى</p>
-                        <p class="text-emerald-600 mt-1">امتياز</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">دبلوم عالي في الشريعة والدراسات الإسلامية</h3>
-                            <span class="text-gray-500 text-sm">2018</span>
-                        </div>
-                        <p class="text-indigo-600">جامعة أم القرى</p>
-                        <p class="text-emerald-600 mt-1">امتياز</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">ماجستير في إدارة المعلومات</h3>
-                            <span class="text-gray-500 text-sm">2016</span>
-                        </div>
-                        <p class="text-indigo-600">جامعة الملك عبد العزيز</p>
-                        <p class="text-emerald-600 mt-1">امتياز</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">بكالوريوس في علم المعلومات</h3>
-                            <span class="text-gray-500 text-sm">2012</span>
-                        </div>
-                        <p class="text-indigo-600">جامعة أم القرى</p>
-                        <p class="text-emerald-600 mt-1">جيد جداً</p>
-                    </div>
-                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">المؤهلات الأكاديمية</h2>
                 
-                <!-- Experience Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">الخبرات المهنية</h2>
+                <div class="space-y-4">
+                    <div class="timeline-item bg-blue-50 border-l-4 border-blue-500">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">دكتوراه في إدارة المعرفة</h3>
+                                <p class="timeline-organization">جامعة الملك عبد العزيز</p>
+                            </div>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-green-600 font-medium">امتياز</span>
+                        </div>
+                    </div>
                     
+                    <div class="timeline-item bg-green-50 border-l-4 border-green-500">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">ماجستير في الشريعة والدراسات الإسلامية</h3>
+                                <p class="timeline-organization">جامعة أم القرى</p>
+                            </div>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-green-600 font-medium">امتياز</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item bg-purple-50 border-l-4 border-purple-500">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">دبلوم عالي في الشريعة والدراسات الإسلامية</h3>
+                                <p class="timeline-organization">جامعة أم القرى</p>
+                            </div>
+                            <span class="timeline-date">2018</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-green-600 font-medium">امتياز</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item bg-orange-50 border-l-4 border-orange-500">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">ماجستير في إدارة المعلومات</h3>
+                                <p class="timeline-organization">جامعة الملك عبد العزيز</p>
+                            </div>
+                            <span class="timeline-date">2016</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-green-600 font-medium">امتياز</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item bg-pink-50 border-l-4 border-pink-500">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">بكالوريوس في علم المعلومات</h3>
+                                <p class="timeline-organization">جامعة أم القرى</p>
+                            </div>
+                            <span class="timeline-date">2012</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-green-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-green-600 font-medium">جيد جداً</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">الخبرات المهنية</h2>
+                
+                <div class="space-y-4">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">المؤسس والمدير التنفيذي</h3>
+                                <p class="timeline-organization">وان باينري نيكسس</p>
+                            </div>
+                            <span class="timeline-date">2024 - الحاضر</span>
+                        </div>
+                        <p class="timeline-description">
+                            قيادة الشركة في تطوير حلول تقنية متقدمة تتماشى مع رؤية المملكة 2030.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">عضو مجلس إدارة</h3>
+                                <p class="timeline-organization">شركة مقام السلام للمحاماة والاستشارات القانونية</p>
+                            </div>
+                            <span class="timeline-date">الحاضر</span>
+                        </div>
+                        <p class="timeline-description">
+                            المساهمة في الاستراتيجيات والتوجيهات القانونية للشركة.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">عضو</h3>
+                                <p class="timeline-organization">المجلس الدولي للمتاحف</p>
+                            </div>
+                            <span class="timeline-date">الحاضر</span>
+                        </div>
+                        <p class="timeline-description">
+                            المشاركة في تطوير معايير المتاحف العالمية وتطبيقات إدارة المعرفة.
+                        </p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">عضو</h3>
+                                <p class="timeline-organization">مجموعة السلام آسك</p>
+                            </div>
+                            <span class="timeline-date">الحاضر</span>
+                        </div>
+                        <p class="timeline-description">
+                            المساهمة في المبادرات والمشاريع المجتمعية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Memberships -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">العضويات المهنية</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <div class="info-icon bg-blue-100">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <span class="text-secondary font-medium">عضو IEEE</span>
+                    </div>
+                    
+                    <div class="flex items-center p-4 bg-purple-50 rounded-lg border border-purple-200">
+                        <div class="info-icon bg-purple-100">
+                            <svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <span class="text-secondary font-medium">عضو جمعية الحوسبة الآلية (ACM)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Areas -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">مجالات البحث</h2>
+                
+                <div class="space-y-6">
                     <div>
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">المؤسس والمدير التنفيذي</h3>
-                            <span class="text-gray-500 text-sm">2024 - الحاضر</span>
-                        </div>
-                        <p class="text-indigo-600">وان باينري نيكسس</p>
-                        <p class="text-gray-700 mt-1">قيادة الشركة في تطوير حلول تقنية متقدمة تتماشى مع رؤية المملكة 2030.</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">عضو مجلس إدارة</h3>
-                            <span class="text-gray-500 text-sm">الحاضر</span>
-                        </div>
-                        <p class="text-indigo-600">شركة مقام السلام للمحاماة والاستشارات القانونية</p>
-                        <p class="text-gray-700 mt-1">المساهمة في الاستراتيجيات والتوجيهات القانونية للشركة.</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">عضو</h3>
-                            <span class="text-gray-500 text-sm">الحاضر</span>
-                        </div>
-                        <p class="text-indigo-600">المجلس الدولي للمتاحف</p>
-                        <p class="text-gray-700 mt-1">المشاركة في تطوير معايير المتاحف العالمية وتطبيقات إدارة المعرفة.</p>
-                    </div>
-                    
-                    <div class="mt-4 pt-4 border-t">
-                        <div class="flex justify-between">
-                            <h3 class="font-medium">عضو</h3>
-                            <span class="text-gray-500 text-sm">الحاضر</span>
-                        </div>
-                        <p class="text-indigo-600">مجموعة السلام آسك</p>
-                        <p class="text-gray-700 mt-1">المساهمة في المبادرات والمشاريع المجتمعية.</p>
-                    </div>
-                </div>
-
-                <!-- Memberships Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">العضويات</h2>
-                    <div class="space-y-2">
-                        <div class="flex items-center p-2 bg-indigo-50 rounded-lg">
-                            <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                            <span class="mr-2 text-gray-700">عضو IEEE</span>
-                        </div>
-                        <div class="flex items-center p-2 bg-indigo-50 rounded-lg">
-                            <svg class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                            <span class="mr-2 text-gray-700">عضو جمعية الحوسبة الآلية (ACM)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Research Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">الأبحاث</h2>
-                    
-                    <div class="mb-4">
-                        <h3 class="font-medium text-indigo-800 mb-2">علم المعلومات</h3>
-                        <ul class="list-disc list-inside space-y-1 text-gray-700 pr-5">
-                            <li>نظم المعلومات وإدارة المحتوي المؤسسي</li>
-                            <li>معايير تقييم نظم إدارة المعرفة</li>
-                            <li>نظم إدارة المتاحف ودورها في دعم عمليات إدارة المعرفة</li>
-                            <li>اتاحة المعرفة باستخدام نظم إدارة المتاحف</li>
-                            <li>إدارة المشاريع بين المنهجية التقليدية والمنهجية الحديثة</li>
-                            <li>تنظيم المعرفة</li>
-                            <li>دور الامن السيبراني في تحقيق امن المعرفة</li>
+                        <h3 class="font-semibold text-blue-600 mb-3">علم المعلومات</h3>
+                        <ul class="space-y-2 text-secondary">
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-blue-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                نظم المعلومات وإدارة المحتوي المؤسسي
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-blue-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                معايير تقييم نظم إدارة المعرفة
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-blue-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                نظم إدارة المتاحف ودورها في دعم عمليات إدارة المعرفة
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-blue-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                دور الامن السيبراني في تحقيق امن المعرفة
+                            </li>
                         </ul>
                     </div>
                     
                     <div>
-                        <h3 class="font-medium text-indigo-800 mb-2">الشريعة والدراسات الإسلامية</h3>
-                        <ul class="list-disc list-inside space-y-1 text-gray-700 pr-5">
-                            <li>اراء الفقهاء في اسقاط النفقة الزوجية بعمل المرأة</li>
-                            <li>الأسباب الطارئة لانتقال ولاية النكاح</li>
-                            <li>بناء مكنز السيرة النبوية</li>
-                            <li>الصبر في القرآن الكريم</li>
+                        <h3 class="font-semibold text-green-600 mb-3">الشريعة والدراسات الإسلامية</h3>
+                        <ul class="space-y-2 text-secondary">
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                اراء الفقهاء في اسقاط النفقة الزوجية بعمل المرأة
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                الأسباب الطارئة لانتقال ولاية النكاح
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                بناء مكنز السيرة النبوية
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-4 h-4 text-green-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                الصبر في القرآن الكريم
+                            </li>
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Skills Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">المهارات</h2>
-                    <div class="space-y-3">
-                        <div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">إدارة المعرفة</span>
-                                <span class="text-gray-500">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">نظم المعلومات</span>
-                                <span class="text-gray-500">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">الدراسات الإسلامية</span>
-                                <span class="text-gray-500">92%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">إدارة المحتوى المؤسسي</span>
-                                <span class="text-gray-500">88%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-700">الأمن السيبراني</span>
-                                <span class="text-gray-500">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                                <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Social Links Section -->
-                <div class="bg-white rounded-lg shadow p-4">
-                    <h2 class="text-lg font-bold mb-4">روابط التواصل الاجتماعي</h2>
-                    <div class="grid grid-cols-2 gap-4">
-                        <a 
-                            href="https://linkedin.com/in/drbinnasser" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300"
-                        >
-                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                </svg>
-                            </div>
-                            <span class="mr-2 text-gray-700">LinkedIn</span>
-                        </a>
-                        <a 
-                            href="https://x.com/obn_ksa?s=11&t=ZI1Wx9tdlTrtYo3U5BojaA" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300"
-                        >
-                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                </svg>
-                            </div>
-                            <span class="mr-2 text-gray-700">X (Twitter)</span>
-                        </a>
-                        <a 
-                            href="https://facebook.com/thmanbnnasr.2025?mibextid=LQQJ4d&rdid=QPv0iCDTO2LKed7a" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="flex items-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300"
-                        >
-                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                                </svg>
-                            </div>
-                            <span class="mr-2 text-gray-700">Facebook</span>
-                        </a>
-                        <a 
-                            href="https://snapchat.com/add/drbinnasser?share_id=SefB1ROZR-6CoRgaGrnA9g&locale=ar_SA%40calendar%3Dgregorian%3Bnumbers%3Dlatn" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="flex items-center p-3 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition duration-300"
-                        >
-                            <div class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600">
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.973 1.437.895.043 1.131.395 1.235 1.19.301 2.327 1.56 2.236 2.769 2.118.982-.095 1.77.164 2.06 1.604.517 2.582 1.674 2.821 2.987 2.304 1.486-.585 2.13-.62 3.578.786.503.472 1.232.334 1.747.056.514-.278.902-.801 1.157-1.447 1.254-3.17 2.049-3.535 3.622-4.717 1.579-1.184 1.463-1.922 1.31-2.467-.295-1.048-1.131-1.905-2.167-2.131-2.468-.69-3.096-2.062-3.626-4.061-.107-.408-.386-.775-.762-1.011-.376-.236-.822-.322-1.242-.249l-.31.073c-3.375.9-3.934-1.537-4.373-2.989l-.098-.28c-.375-1.085-1.422-1.878-2.634-1.986-.96-.106-4.433-.783-4.437-.783-.048-.001-.096-.001-.143.004z"/>
-                                </svg>
-                            </div>
-                            <span class="mr-2 text-gray-700">Snapchat</span>
-                        </a>
-                        <a 
-                            href="https://instagram.com/drbinnasser" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="flex items-center p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition duration-300"
-                        >
-                            <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-pink-600">
-                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                            </div>
-                            <span class="mr-2 text-gray-700">Instagram</span>
-                        </a>
-                    </div>
-                </div>
             </div>
             
-            <!-- Social Media Tab (hidden by default) -->
-            <div id="social-tab" class="tab-content space-y-6 hidden">
-                <!-- Twitter Posts -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-blue-50">
-                        <h2 class="text-lg font-bold text-blue-900">X (Twitter)</h2>
-                    </div>
-                    <div class="divide-y">
-                        <div class="p-4">
-                            <div class="flex justify-between items-start">
-                                <div class="flex-1">
-                                    <p class="text-gray-800">نعمل على تطوير حلول ذكية تدعم رؤية المملكة 2030 #التحول_الرقمي #وان_باينري_نيكسس</p>
-                                    <div class="flex items-center mt-2 text-sm text-gray-500">
-                                        <span>منذ يومين</span>
-                                        <span class="mx-2">•</span>
-                                        <span>67 إعجاب</span>
-                                    </div>
-                                </div>
-                                <div class="h-6 w-6 text-gray-400">
-                                    X
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-4">
-                            <div class="flex justify-between items-start">
-                                <div class="flex-1">
-                                    <p class="text-gray-800">مشاركتي في المؤتمر الدولي لإدارة المعرفة وتطبيقاتها في المتاحف #إدارة_المعرفة</p>
-                                    <div class="flex items-center mt-2 text-sm text-gray-500">
-                                        <span>منذ أسبوع</span>
-                                        <span class="mx-2">•</span>
-                                        <span>89 إعجاب</span>
-                                    </div>
-                                </div>
-                                <div class="h-6 w-6 text-gray-400">
-                                    X
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Facebook Posts -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-blue-50">
-                        <h2 class="text-lg font-bold text-blue-900">Facebook</h2>
-                    </div>
-                    <div class="divide-y">
-                        <div class="p-4">
-                            <div class="flex justify-between items-start">
-                                <div class="flex-1">
-                                    <p class="text-gray-800">سعيد بإطلاق مبادرة جديدة لدعم التراث الثقافي الرقمي في المملكة بالتعاون مع المجلس الدولي للمتاحف. #التراث_الثقافي #المتاحف_الرقمية</p>
-                                    <div class="flex items-center mt-2 text-sm text-gray-500">
-                                        <span>منذ 3 أيام</span>
-                                        <span class="mx-2">•</span>
-                                        <span>156 إعجاب</span>
-                                    </div>
-                                </div>
-                                <div class="h-6 w-6 text-gray-400">
-                                    F
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Snapchat Posts -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-yellow-50">
-                        <h2 class="text-lg font-bold text-yellow-700">Snapchat</h2>
-                    </div>
-                    <div class="divide-y">
-                        <div class="p-4">
-                            <div class="flex justify-between items-start">
-                                <div class="flex-1">
-                                    <p class="text-gray-800">لحظات من زيارتي لمعرض التقنية في الرياض #رؤية_2030</p>
-                                    <div class="flex items-center mt-2 text-sm text-gray-500">
-                                        <span>منذ 5 أيام</span>
-                                        <span class="mx-2">•</span>
-                                        <span>214 مشاهدة</span>
-                                    </div>
-                                </div>
-                                <div class="h-6 w-6 text-gray-400">
-                                    S
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Followers Tab (hidden by default) -->
-            <div id="followers-tab" class="tab-content space-y-6 hidden">
-                <!-- Twitter Followers -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-blue-50">
-                        <h2 class="text-lg font-bold text-blue-900">X (Twitter) المتابعون</h2>
-                    </div>
-                    <div class="p-4">
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="وزارة الاتصالات" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">وزارة الاتصالات</p>
-                                    <p class="text-gray-500 text-sm">@MCIT_KSA</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="هيئة المتاحف السعودية" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">هيئة المتاحف السعودية</p>
-                                    <p class="text-gray-500 text-sm">@SaudiMuseums</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="مكتبة الملك عبدالعزيز" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">مكتبة الملك عبدالعزيز</p>
-                                    <p class="text-gray-500 text-sm">@kapl_org</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="جامعة الملك عبدالعزيز" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">جامعة الملك عبدالعزيز</p>
-                                    <p class="text-gray-500 text-sm">@kauweb</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="جامعة أم القرى" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">جامعة أم القرى</p>
-                                    <p class="text-gray-500 text-sm">@uqu_edu</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Skills -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">المهارات التقنية</h2>
                 
-                <!-- Snapchat Followers -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-yellow-50">
-                        <h2 class="text-lg font-bold text-yellow-700">Snapchat المتابعون</h2>
-                    </div>
-                    <div class="p-4">
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="وزارة الثقافة" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">وزارة الثقافة</p>
-                                    <p class="text-gray-500 text-sm">@MOCSaudi</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="الهيئة السعودية للبيانات" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">الهيئة السعودية للبيانات</p>
-                                    <p class="text-gray-500 text-sm">@SDAIA_SA</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="برنامج التحول الوطني" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">برنامج التحول الوطني</p>
-                                    <p class="text-gray-500 text-sm">@SaudiVision2030</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="الدكتور عبدالله المسند" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">الدكتور عبدالله المسند</p>
-                                    <p class="text-gray-500 text-sm">@dralmasnad</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="مركز المعلومات الوطني" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">مركز المعلومات الوطني</p>
-                                    <p class="text-gray-500 text-sm">@NIC_SA</p>
-                                </div>
-                            </div>
+                <div class="space-y-6">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">إدارة المعرفة</span>
+                            <span class="skill-percentage">95%</span>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Facebook Followers -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-blue-50">
-                        <h2 class="text-lg font-bold text-blue-900">Facebook المتابعون</h2>
-                    </div>
-                    <div class="p-4">
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="مجلس الشؤون الاقتصادية" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">مجلس الشؤون الاقتصادية</p>
-                                    <p class="text-gray-500 text-sm">CEDA_SA</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="المجلس الدولي للمتاحف" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">المجلس الدولي للمتاحف</p>
-                                    <p class="text-gray-500 text-sm">ICOM</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="رؤية المملكة 2030" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">رؤية المملكة 2030</p>
-                                    <p class="text-gray-500 text-sm">SaudiVision2030</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="مكتبة الملك فهد" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">مكتبة الملك فهد</p>
-                                    <p class="text-gray-500 text-sm">KFNL</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="https://via.placeholder.com/40" alt="الهيئة العامة للأوقاف" class="w-10 h-10 rounded-full" />
-                                <div class="mr-3">
-                                    <p class="font-medium">الهيئة العامة للأوقاف</p>
-                                    <p class="text-gray-500 text-sm">AwqafKSA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- YouTube Tab (hidden by default) -->
-            <div id="youtube-tab" class="tab-content space-y-6 hidden">
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="p-4 bg-red-50">
-                        <div class="flex justify-between items-center">
-                            <h2 class="text-lg font-bold text-red-900">
-                                د. عثمان الزهراني
-                            </h2>
-                            <div class="text-red-700 text-sm font-medium">
-                                12.7K مشترك
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
                         </div>
                     </div>
                     
-                    <div class="divide-y">
-                        <div class="p-4 flex">
-                            <div class="w-32 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                                <img src="https://via.placeholder.com/150x80" alt="دور التكنولوجيا في دعم رؤية المملكة 2030" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="mr-3 flex-1">
-                                <h3 class="font-medium text-gray-800 line-clamp-2">دور التكنولوجيا في دعم رؤية المملكة 2030</h3>
-                                <div class="flex items-center mt-1 text-sm text-gray-500">
-                                    <span>9.3K مشاهدة</span>
-                                    <span class="mx-2">•</span>
-                                    <span>منذ أسبوعين</span>
-                                </div>
-                            </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">نظم المعلومات</span>
+                            <span class="skill-percentage">90%</span>
                         </div>
-
-                        <div class="p-4 flex">
-                            <div class="w-32 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                                <img src="https://via.placeholder.com/150x80" alt="نظم إدارة المعرفة في المتاحف: الفرص والتحديات" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="mr-3 flex-1">
-                                <h3 class="font-medium text-gray-800 line-clamp-2">نظم إدارة المعرفة في المتاحف: الفرص والتحديات</h3>
-                                <div class="flex items-center mt-1 text-sm text-gray-500">
-                                    <span>7.8K مشاهدة</span>
-                                    <span class="mx-2">•</span>
-                                    <span>منذ شهر</span>
-                                </div>
-                            </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%"></div>
                         </div>
-
-                        <div class="p-4 flex">
-                            <div class="w-32 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
-                                <img src="https://via.placeholder.com/150x80" alt="الأمن السيبراني وحماية المعرفة المؤسسية" class="w-full h-full object-cover" />
-                            </div>
-                            <div class="mr-3 flex-1">
-                                <h3 class="font-medium text-gray-800 line-clamp-2">الأمن السيبراني وحماية المعرفة المؤسسية</h3>
-                                <div class="flex items-center mt-1 text-sm text-gray-500">
-                                    <span>6.2K مشاهدة</span>
-                                    <span class="mx-2">•</span>
-                                    <span>منذ شهرين</span>
-                                </div>
-                            </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">الدراسات الإسلامية</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">إدارة المحتوى المؤسسي</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">الأمن السيبراني</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">روابط التواصل الاجتماعي</h2>
                 
-                <div class="text-center">
-                    <a 
-                        href="#" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="inline-block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-300"
-                    >
-                        مشاهدة المزيد على يوتيوب
+                <div class="social-grid">
+                    <a href="https://linkedin.com/in/drbinnasser" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <div class="social-icon bg-blue-600">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <span class="social-name">لينكد ان</span>
+                    </a>
+                    
+                    <a href="https://x.com/obn_ksa" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <div class="social-icon" style="background-color: #000000;">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </div>
+                        <span class="social-name">تويتر </span>
+                    </a>
+                    
+                    <a href="https://facebook.com/thmanbnnasr.2025" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <div class="social-icon" style="background-color: #1877f2;">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </div>
+                        <span class="social-name">فيسبوك</span>
+                    </a>
+                    
+                    <a href="https://instagram.com/drbinnasser" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <div class="social-icon" style="background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <span class="social-name">انستاجرام</span>
+                    </a>
+                    
+                    <a href="https://snapchat.com/add/drbinnasser" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <div class="social-icon" style="background-color: #fffc00;">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.973 1.437.895.043 1.131.395 1.235 1.19.301 2.327 1.56 2.236 2.769 2.118.982-.095 1.77.164 2.06 1.604.517 2.582 1.674 2.821 2.987 2.304 1.486-.585 2.13-.62 3.578.786.503.472 1.232.334 1.747.056.514-.278.902-.801 1.157-1.447 1.254-3.17 2.049-3.535 3.622-4.717 1.579-1.184 1.463-1.922 1.31-2.467-.295-1.048-1.131-1.905-2.167-2.131-2.468-.69-3.096-2.062-3.626-4.061-.107-.408-.386-.775-.762-1.011-.376-.236-.822-.322-1.242-.249l-.31.073c-3.375.9-3.934-1.537-4.373-2.989l-.098-.28c-.375-1.085-1.422-1.878-2.634-1.986-.96-.106-4.433-.783-4.437-.783-.048-.001-.096-.001-.143.004z"/>
+                            </svg>
+                        </div>
+                        <span class="social-name">سناب شات</span>
                     </a>
                 </div>
             </div>
-        </main>
+        </section>
         
-        <!-- Footer with Company Logo -->
-        <footer class="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-indigo-700 to-indigo-900 shadow-md p-4 flex justify-center items-center">
-            <div class="text-center">
-                <div class="text-xs text-indigo-200 mb-1">
-                    مُقدم من
-                </div>
-                <div class="font-bold text-white">
-                    One Binary Nexus (OBN)
+        <!-- Social Media Section -->
+        <section id="social-section" class="content-section space-y-6">
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">آخر المنشورات</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                            <span class="font-medium text-blue-600">X (Twitter)</span>
+                        </div>
+                        <p class="text-secondary">نعمل على تطوير حلول ذكية تدعم رؤية المملكة 2030 #التحول_الرقمي #وان_باينري_نيكسس</p>
+                        <div class="text-sm text-muted mt-2">منذ يومين • 67 إعجاب</div>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-5 h-5 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                            <span class="font-medium text-blue-600">Facebook</span>
+                        </div>
+                        <p class="text-secondary">سعيد بإطلاق مبادرة جديدة لدعم التراث الثقافي الرقمي في المملكة بالتعاون مع المجلس الدولي للمتاحف. #التراث_الثقافي #المتاحف_الرقمية</p>
+                        <div class="text-sm text-muted mt-2">منذ 3 أيام • 156 إعجاب</div>
+                    </div>
+                    
+                    <div class="border-l-4 border-yellow-500 pl-4">
+                        <div class="flex items-center mb-2">
+                            <svg class="w-5 h-5 text-yellow-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.973 1.437.895.043 1.131.395 1.235 1.19.301 2.327 1.56 2.236 2.769 2.118.982-.095 1.77.164 2.06 1.604.517 2.582 1.674 2.821 2.987 2.304 1.486-.585 2.13-.62 3.578.786.503.472 1.232.334 1.747.056.514-.278.902-.801 1.157-1.447 1.254-3.17 2.049-3.535 3.622-4.717 1.579-1.184 1.463-1.922 1.31-2.467-.295-1.048-1.131-1.905-2.167-2.131-2.468-.69-3.096-2.062-3.626-4.061-.107-.408-.386-.775-.762-1.011-.376-.236-.822-.322-1.242-.249l-.31.073c-3.375.9-3.934-1.537-4.373-2.989l-.098-.28c-.375-1.085-1.422-1.878-2.634-1.986-.96-.106-4.433-.783-4.437-.783-.048-.001-.096-.001-.143.004z"/>
+                            </svg>
+                            <span class="font-medium text-yellow-600">Snapchat</span>
+                        </div>
+                        <p class="text-secondary">لحظات من زيارتي لمعرض التقنية في الرياض #رؤية_2030</p>
+                        <div class="text-sm text-muted mt-2">منذ 5 أيام • 214 مشاهدة</div>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+        
+        <!-- Followers Section -->
+        <section id="followers-section" class="content-section space-y-6">
+            <div class="card p-6">
+                <h2 class="text-xl font-bold text-primary mb-6">المتابعون البارزون</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="https://www.tech-mag.net/techmag/uploads/2021/10/MCIT_logo.png" alt="وزارة الاتصالات" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">وزارة الاتصالات وتقنية المعلومات</p>
+                            <p class="text-sm text-muted">@MCIT_KSA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="data:image/png;base64,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" alt="هيئة المتاحف السعودية" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">هيئة المتاحف السعودية</p>
+                            <p class="text-sm text-muted">@SaudiMuseums</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfTC4DCb7jA9E0tqTV2PuuhgZ_tWQNfjiJPQ&s" alt="مكتبة الملك عبدالعزيز" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">مكتبة الملك عبدالعزيز العامة</p>
+                            <p class="text-sm text-muted">@kapl_org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Far.wikipedia.org%2Fwiki%2F%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2585%25D9%2584%25D9%2583_%25D8%25B9%25D8%25A8%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25B2%25D9%258A%25D8%25B2&psig=AOvVaw3xP0v-gPldsgc9LO5R_XVw&ust=1747994509734000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjepo_pto0DFQAAAAAdAAAAABAE" alt="جامعة الملك عبدالعزيز" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">جامعة الملك عبدالعزيز</p>
+                            <p class="text-sm text-muted">@kauweb</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="data:image/png;base64,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" alt="جامعة أم القرى" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">جامعة أم القرى</p>
+                            <p class="text-sm text-muted">@uqu_edu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsdaia.gov.sa%2F&psig=AOvVaw1uYfvmFD7z-lAle9aJCySa&ust=1747994570173000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCg9qvpto0DFQAAAAAdAAAAABAE" alt="الهيئة السعودية للبيانات" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-medium">الهيئة السعودية للبيانات والذكاء الاصطناعي</p>
+                            <p class="text-sm text-muted">@SDAIA_SA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- YouTube Section -->
+        <section id="youtube-section" class="content-section space-y-6">
+            <div class="card p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold text-primary">قناة اليوتيوب</h2>
+                    <div class="text-sm text-muted bg-red-50 px-3 py-1 rounded-full">
+                        12.7K مشترك
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex p-4 border rounded-lg hover:bg-gray-50 transition cursor-pointer">
+                        <div class="w-24 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-4 relative">
+                            <img src="data:image/jpeg;base64,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" alt="دور التكنولوجيا في دعم رؤية المملكة 2030" class="w-full h-full object-cover rounded-lg" />
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-medium mb-1">دور التكنولوجيا في دعم رؤية المملكة 2030</h3>
+                            <p class="text-sm text-muted">9.3K مشاهدة • منذ أسبوعين</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex p-4 border rounded-lg hover:bg-gray-50 transition cursor-pointer">
+                        <div class="w-24 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4 relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohBgyIMTiKVVzh906zgh6tXc1kgXUaQLSZQ&s" alt="نظم إدارة المعرفة في المتاحف" class="w-full h-full object-cover rounded-lg" />
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-medium mb-1">نظم إدارة المعرفة في المتاحف: الفرص والتحديات</h3>
+                            <p class="text-sm text-muted">7.8K مشاهدة • منذ شهر</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex p-4 border rounded-lg hover:bg-gray-50 transition cursor-pointer">
+                        <div class="w-24 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-4 relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7cbxZdu18q97q2X4QjhRmEf8N2P9Ofb4UQ&s" alt="الأمن السيبراني وحماية المعرفة" class="w-full h-full object-cover rounded-lg" />
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-medium mb-1">الأمن السيبراني وحماية المعرفة المؤسسية</h3>
+                            <p class="text-sm text-muted">6.2K مشاهدة • منذ شهرين</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        مشاهدة القناة كاملة
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Clean Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            مُقدم من <span class="footer-brand">One Binary Nexus (OBN)</span>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
